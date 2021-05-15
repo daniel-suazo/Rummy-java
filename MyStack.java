@@ -1,4 +1,9 @@
 import java.util.LinkedList;
+// MyStack.java - Daniel Suazo - 15 May 2021
+// last modified: Daniel Suazo - 15 May 2021
+// Implementation of a playing card.  Uses classes Rank and Suit for
+// expressing the card value.
+
 
 public class MyStack<T> implements MyStackInterface<T> {
     protected LinkedList<Object> stack;

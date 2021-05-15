@@ -1,0 +1,111 @@
+Player 1: 
+[3h, 7c, 7s, 8h, 8d, td, ts, qd, kd] 
+Player 2: 
+[ah, as, 2d, 2s, 4c, 5c, 6c, js, qh] 
+Player 1: 
+[3h, 7c, 7s, 8h, 8d, 9d, td, ts, qd, kd] 
+Player 2: 
+[ah, as, 2d, 2s, 4c, 5c, 6c, js, qh] 
+Player 2: 
+[ah, as, 2d, 2s, 4c, 5c, 6c, 8s, js, qh] 
+Player 1: 
+[3d, 7c, 7s, 8h, 8d, 9d, td, ts, qd, kd] 
+Player 2: 
+[as, 2d, 2s, 4c, 5c, 6c, 8s, js, qh] 
+Player 2: 
+[as, 2d, 2s, 4c, 5c, 6c, 8s, 8c, js, qh] 
+Player 1: 
+[7c, 7s, 8h, 8d, 9d, td, ts, jc, qd, kd] 
+Player 2: 
+[2d, 2s, 4c, 5c, 6c, 8s, 8c, js, qh] 
+Player 2: 
+[2d, 2s, 4c, 5c, 6c, 8s, 8c, js, qh, ks] 
+Player 1: 
+[6h, 7c, 7s, 8h, 8d, 9d, td, ts, jc, kd] 
+Player 2: 
+[2s, 4c, 5c, 6c, 8s, 8c, js, qh, ks] 
+Player 2: 
+[2s, 2h, 4c, 5c, 6c, 8s, 8c, js, qh, ks] 
+Player 1: 
+[7c, 7s, 8h, 8d, 9d, td, ts, jc, qs, kd] 
+Player 2: 
+[2h, 4c, 5c, 6c, 8s, 8c, js, qh, ks] 
+Player 2: 
+[2h, 4c, 5c, 6c, 8s, 8c, 9s, js, qh, ks] 
+Player 1: 
+[5d, 7c, 7s, 8h, 8d, 9d, td, ts, jc, qs] 
+Player 2: 
+[4c, 5c, 6c, 8s, 8c, 9s, js, qh, ks] 
+Player 2: 
+[ad, 4c, 5c, 6c, 8s, 8c, 9s, js, qh, ks] 
+Player 1: 
+[4s, 5d, 7c, 7s, 8h, 8d, 9d, td, ts, jc] 
+Player 2: 
+[4c, 5c, 6c, 8s, 8c, 9s, js, qh, ks] 
+Player 2: 
+[4c, 5c, 6c, 8s, 8c, 9s, 9c, js, qh, ks] 
+Player 1: 
+[4s, 5d, 7c, 7s, 8h, 8d, 9d, td, ts, tc] 
+Player 2: 
+[5c, 6c, 8s, 8c, 9s, 9c, js, qh, ks] 
+Player 2: 
+[5c, 5h, 6c, 8s, 8c, 9s, 9c, js, qh, ks] 
+Player 1: 
+[4s, 5d, 5c, 7c, 7s, 8h, 8d] 
+Player 2: 
+[5h, 6c, 8s, 8c, 9s, 9c, js, qh, ks] 
+Player 2: 
+[3c, 5h, 6c, 8s, 8c, 9s, 9c, js, qh, ks] 
+Player 1: 
+[4d, 5d, 5c, 7c, 7s, 8h, 8d] 
+Player 2: 
+[5h, 6c, 8s, 8c, 9s, 9c, js, qh, ks] 
+Player 2: 
+[5h, 6c, 8s, 8c, 9s, 9c, js, qh, qc, ks] 
+Player 1: 
+[ac, 5d, 5c, 7c, 7s, 8h, 8d] 
+Player 2: 
+[6c, 8s, 8c, 9s, 9c, js, qh, qc, ks] 
+Player 2: 
+[3s, 6c, 8s, 8c, 9s, 9c, js, qh, qc, ks] 
+Player 1: 
+[5d, 5c, 5s, 7c, 7s, 8h, 8d] 
+Player 2: 
+[6c, 8s, 8c, 9s, 9c, js, qh, qc, ks] 
+Player 2: 
+[6c, 8s, 8c, 9s, 9c, js, jd, qh, qc, ks] 
+Player 1: 
+[2c, 7s, 8h, 8d] 
+Player 2: 
+[8s, 8c, 9s, 9c, js, jd, qh, qc, ks] 
+Player 2: 
+[8s, 8c, 9s, 9c, th, js, jd, qh, qc, ks] 
+Player 1: 
+[4h, 7s, 8h, 8d] 
+Player 2: 
+[8c, 9s, 9c, th, js, jd, qh, qc, ks] 
+Player 2: 
+[8c, 9s, 9c, th, js, jd, jh, qh, qc, ks] 
+Player 1: 
+[6s, 7s, 8h, 8d] 
+Player 2: 
+[9s, 9c, th, qh, qc, ks] 
+Player 2: 
+[9s, 9c, th, qh, qc, ks, kh] 
+Player 1: 
+[7s, 8h, 8d, kc] 
+Player 2: 
+[9c, th, qh, qc, ks, kh] 
+Player 2: 
+[9c, 9h, th, qh, qc, ks, kh] 
+Player 1: 
+[6d, 8h, 8d, kc] 
+Player 2: 
+[9h, th, qh, qc, ks, kh] 
+Player 2: 
+[7h, 9h, th, qh, qc, ks, kh] 
+Player 1: 
+[7d, 8h, 8d, kc] 
+Player 1 Wins!!!
+Player 2: 
+[9h, th, qh, qc, ks, kh] 
