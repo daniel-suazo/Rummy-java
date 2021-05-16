@@ -199,9 +199,9 @@ public class Proj2 extends JFrame implements ActionListener {
         rightBorder.add(setPanels[11]);
         rightBorder.add(setPanels[12]);
         add(rightBorder, BorderLayout.EAST);
-        System.out.println("Player 1: ");
+        System.out.println("Player 1 Starting hand: ");
         p1Hand.sort();
-        System.out.println("Player 2: ");
+        System.out.println("Player 2 Starting hand: ");
         p2Hand.sort();
     }
 
@@ -218,17 +218,23 @@ public class Proj2 extends JFrame implements ActionListener {
             }
             if (cardDeck.getSizeOfDeck() == 0)
                 deckPile.setIcon(new ImageIcon(Card.directory + "blank.gif"));
-            System.out.println("Player 1: ");
+            System.out.println("Player 1 hand: ");
             p1Hand.sort();
 
             // Endgame Deck
             if (cardDeck.isEmpty() && logging) {
                 if (p1Hand.compareTo(p2Hand) > 0) {
                     System.out.println("Player 1 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                    System.exit(0);
                 } else if (p1Hand.compareTo(p2Hand) == 0) {
                     System.out.println("Tie!");
+                    JOptionPane.showMessageDialog(null, "Tie!");
+                    System.exit(0);
                 } else {
                     System.out.println("Player 2 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                    System.exit(0);
                 }
 
             }
@@ -246,7 +252,7 @@ public class Proj2 extends JFrame implements ActionListener {
             }
             if (cardDeck.getSizeOfDeck() == 0)
                 deckPile.setIcon(new ImageIcon(Card.directory + "blank.gif"));
-            System.out.println("Player 2: ");
+            System.out.println("Player 2 hand: ");
             p2Hand.sort();
         }
 
@@ -265,7 +271,7 @@ public class Proj2 extends JFrame implements ActionListener {
                 if (p1Stack == src)
                     p1Hand.addCard(card);
             }
-            System.out.println("Player 1: ");
+            System.out.println("Player 1 hand: ");
             p1Hand.sort();
 
         }
@@ -286,7 +292,7 @@ public class Proj2 extends JFrame implements ActionListener {
                     p2Hand.addCard(card);
 
             }
-            System.out.println("Player 2: ");
+            System.out.println("Player 2 hand: ");
             p2Hand.sort();
 
         }
@@ -294,6 +300,7 @@ public class Proj2 extends JFrame implements ActionListener {
         if (p1Lay == src) {
             Object[] cards = p1Hand.findSet();
             if (cards != null) {
+                System.out.println("Player 1:");
                 for (int i = 0; i < cards.length; i++) {
                     Card card = (Card) cards[i];
                     layCard(card, logging);
@@ -303,20 +310,32 @@ public class Proj2 extends JFrame implements ActionListener {
             if (p1Hand.GameOver()) {
                 if (p1Hand.compareTo(p2Hand) > 0) {
                     System.out.println("Player 1 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                    System.exit(0);
                 } else if (p1Hand.compareTo(p2Hand) == 0) {
                     System.out.println("Tie!");
+                    JOptionPane.showMessageDialog(null, "Tie!");
+                    System.exit(0);
                 } else {
                     System.out.println("Player 2 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                    System.exit(0);
                 }
             }
 
             if (cardDeck.isEmpty()) {
                 if (p1Hand.compareTo(p2Hand) > 0) {
                     System.out.println("Player 1 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                    System.exit(0);
                 } else if (p1Hand.compareTo(p2Hand) == 0) {
                     System.out.println("Tie!");
+                    JOptionPane.showMessageDialog(null, "Tie!");
+                    System.exit(0);
                 } else {
                     System.out.println("Player 2 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                    System.exit(0);
                 }
 
             }
@@ -325,6 +344,7 @@ public class Proj2 extends JFrame implements ActionListener {
         if (p2Lay == src) {
             Object[] cards = p2Hand.findSet();
             if (cards != null) {
+                System.out.println("Player 2: ");
                 for (int i = 0; i < cards.length; i++) {
                     Card card = (Card) cards[i];
                     layCard(card, logging);
@@ -335,10 +355,16 @@ public class Proj2 extends JFrame implements ActionListener {
             if (p2Hand.GameOver()) {
                 if (p1Hand.compareTo(p2Hand) > 0) {
                     System.out.println("Player 1 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                    System.exit(0);
                 } else if (p1Hand.compareTo(p2Hand) == 0) {
                     System.out.println("Tie!");
+                    JOptionPane.showMessageDialog(null, "Tie!");
+                    System.exit(0);
                 } else {
                     System.out.println("Player 2 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                    System.exit(0);
                 }
             }
 
@@ -359,7 +385,7 @@ public class Proj2 extends JFrame implements ActionListener {
                 // CPU
 
                 // CPU Draw
-                System.out.println("Player 2: ");
+                System.out.println("Player 2 hand: ");
                 p2Hand.sort();
                 playerturn++;
                 playerlayStack++;
@@ -370,12 +396,13 @@ public class Proj2 extends JFrame implements ActionListener {
                 if (cardDeck.getSizeOfDeck() == 0) {
                     deckPile.setIcon(new ImageIcon(Card.directory + "blank.gif"));
                 }
-                System.out.println("Player 2: ");
+                System.out.println("Player 2 hand: ");
                 p2Hand.sort();
 
                 // CPU Lay Sets
                 Object[] CPUcards = p2Hand.findSet();
                 if (CPUcards != null) {
+                    System.out.println("Player 2:");
                     for (int i = 0; i < CPUcards.length; i++) {
                         Card CPUlaycard = (Card) CPUcards[i];
                         layCard(CPUlaycard, logging);
@@ -385,7 +412,7 @@ public class Proj2 extends JFrame implements ActionListener {
 
                 // CPU Discard
 
-                Card ccard = p2Hand.getCard(0);
+                Card ccard = p2Hand.getCard(p2Hand.getNumberOfCards() - 1);
                 stackDeck.push(ccard);
                 topOfStack.setIcon(ccard.getCardImage());
                 p2Hand.removeCard(ccard);
@@ -394,23 +421,35 @@ public class Proj2 extends JFrame implements ActionListener {
 
         }
         // Endgame Lay
-        if (p1Hand.GameOver()) {
+        if (p1Hand.GameOver() || p2Hand.GameOver()) {
             if (p1Hand.compareTo(p2Hand) < 0) {
                 System.out.println("Player 1 Wins!!!");
+                JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                System.exit(0);
             } else if (p1Hand.compareTo(p2Hand) == 0) {
                 System.out.println("Tie!");
+                JOptionPane.showMessageDialog(null, "Tie!");
+                System.exit(0);
             } else {
                 System.out.println("Player 2 Wins!!!");
+                JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                System.exit(0);
             }
         }
         // Endgame Deck
         if (cardDeck.isEmpty()) {
             if (p1Hand.compareTo(p2Hand) < 0) {
                 System.out.println("Player 1 Wins!!!");
+                JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                System.exit(0);
             } else if (p1Hand.compareTo(p2Hand) == 0) {
                 System.out.println("Tie!");
+                JOptionPane.showMessageDialog(null, "Tie!");
+                System.exit(0);
             } else {
                 System.out.println("Player 2 Wins!!!");
+                JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                System.exit(0);
             }
 
         }
@@ -432,20 +471,32 @@ public class Proj2 extends JFrame implements ActionListener {
             if (p2Hand.GameOver()) {
                 if (p1Hand.compareTo(p2Hand) > 0) {
                     System.out.println("Player 1 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                    System.exit(0);
                 } else if (p1Hand.compareTo(p2Hand) == 0) {
                     System.out.println("Tie!");
+                    JOptionPane.showMessageDialog(null, "Tie!");
+                    System.exit(0);
                 } else {
                     System.out.println("Player 2 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                    System.exit(0);
                 }
             }
             // Endgame Deck
             if (cardDeck.isEmpty()) {
                 if (p1Hand.compareTo(p2Hand) > 0) {
                     System.out.println("Player 1 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 1 Wins!!!");
+                    System.exit(0);
                 } else if (p1Hand.compareTo(p2Hand) == 0) {
                     System.out.println("Tie!");
+                    JOptionPane.showMessageDialog(null, "Tie!");
+                    System.exit(0);
                 } else {
                     System.out.println("Player 2 Wins!!!");
+                    JOptionPane.showMessageDialog(null, "Player 2 Wins!!!");
+                    System.exit(0);
                 }
 
             }
@@ -468,9 +519,8 @@ public class Proj2 extends JFrame implements ActionListener {
         int suitIndex = Card.getSuitIndex(suit);
         int rankIndex = Card.getRankIndex(rank);
         // setPanels[rankIndex].array[suitIndex].setText(card.toString());
-        if (logging) {
-            System.out.println("laying " + card);
-        }
+
+        System.out.println("    laying " + card);
         setPanels[rankIndex].array[suitIndex].setIcon(card.getCardImage());
     }
 
