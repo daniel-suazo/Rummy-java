@@ -5,7 +5,7 @@
  * and how hands are compared to one another by overriding the
  * <code>compareTo</code> method.
  */
-public interface HandInterface extends Comparable {
+public interface HandInterface extends Comparable<Hand> {
   /**
    * Adds a card to this hand.
    * 

@@ -6,7 +6,7 @@ public interface MyStackInterface<T> {
      * 
      * @param e - object to push to start of stack.
      */
-    public void push(Object e);
+    public void push(T e);
 
     /**
      * Delete the object on top and return it. PreCondition: Called when programmer

@@ -4,15 +4,14 @@ import java.util.LinkedList;
 // Implementation of a playing card.  Uses classes Rank and Suit for
 // expressing the card value.
 
-
 public class MyStack<T> implements MyStackInterface<T> {
-    protected LinkedList<Object> stack;
+    protected LinkedList<T> stack;
 
     public MyStack() {
-        stack = new LinkedList<Object>();
+        stack = new LinkedList<T>();
     }
 
-    public void push(Object e) {
+    public void push(T e) {
         stack.add(e);
     }
 

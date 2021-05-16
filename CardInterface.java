@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public interface CardInterface extends Comparable {
+public interface CardInterface extends Comparable<Card> {
 
    final static char[] suit = { 'c', 'd', 'h', 's' };
    final static char[] rank = { 'a', '2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k' };
@@ -81,6 +81,6 @@ public interface CardInterface extends Comparable {
     * @return a negative integer, zero, or a positive integer if this card is less
     *         than, equal to, or greater than the referenced card.
     */
-   public int compareTo(Object otherCardObject);
+   public int compareTo(Card otherCard);
 
 }

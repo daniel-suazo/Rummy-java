@@ -14,7 +14,7 @@ import javax.swing.*;
  * @author John K. Estell adapted by Patti Ordóñez
  * @version 1.0
  */
-public class Card implements Comparable {
+public class Card implements Comparable<Card> {
 
    // instance variables for the card
    private char suitValue;
@@ -139,8 +139,7 @@ public class Card implements Comparable {
     * @return a negative integer, zero, or a positive integer is this card is less
     *         than, equal to, or greater than the referenced card.
     */
-   public int compareTo(Object otherCardObject) {
-      Card otherCard = (Card) otherCardObject;
+   public int compareTo(Card otherCard) {
       int rankDiff = getRankIndex(rankValue) - getRankIndex(otherCard.rankValue);
       return rankDiff;
    }

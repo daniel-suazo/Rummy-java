@@ -1,7 +1,7 @@
 import javax.swing.*;
 // import java.util.Collections.
 
-public class Hand implements Comparable<Object> {
+public class Hand implements Comparable<Hand> {
     public DefaultListModel<Card> hand;
 
     public Hand() {
@@ -49,7 +49,7 @@ public class Hand implements Comparable<Object> {
             }
 
         }
-        System.out.println(hand.toString() + " ");
+        System.out.println(this.toString());
         // System.out.println();
 
     }
@@ -63,7 +63,7 @@ public class Hand implements Comparable<Object> {
     }
 
     public int cardRank(int index) {
-        return hand.get(index).getRankIndex(hand.get(index).getRank());
+        return Card.getRankIndex(hand.get(index).getRank());
     }
 
     public boolean GameOver() {
@@ -101,18 +101,16 @@ public class Hand implements Comparable<Object> {
 
     }
 
-    public int compareTo(Object otherHandObject) {
-
-        Hand otherHand = (Hand) otherHandObject;
+    public int compareTo(Hand otherHand) {
         Card P1, P2;
         int pointsP1 = 0, pointsP2 = 0;
         for (int i = 0; i < hand.size(); i++) {
             P1 = hand.get(i);
-            pointsP1 = pointsP1 + P1.getRankIndex(P1.getRank());
+            pointsP1 = pointsP1 + Card.getRankIndex(P1.getRank());
         }
         for (int i = 0; i < otherHand.Sizeof(); i++) {
             P2 = otherHand.getCard(i);
-            pointsP2 = pointsP2 + P2.getRankIndex(P2.getRank());
+            pointsP2 = pointsP2 + Card.getRankIndex(P2.getRank());
         }
         System.out.println(pointsP1 - pointsP2);
         return pointsP1 - pointsP2;
@@ -125,9 +123,9 @@ public class Hand implements Comparable<Object> {
 
         for (int i = 0; i < hand.size(); i++) {
             c = hand.get(i);
-            cards = cards + "" + c.getRank() + c.getSuit();
+            cards = cards + c.getRank() + c.getSuit() + ", ";
         }
-        return cards;
+        return cards.substring(0, cards.length() - 2);
     }
 
     public int Sizeof() {
