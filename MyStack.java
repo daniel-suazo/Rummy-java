@@ -35,4 +35,8 @@ public class MyStack<T> implements MyStackInterface<T> {
     public String toString() {
         return stack.toString();
     }
+
+    public int size() {
+        return stack.size();
+    }
 }

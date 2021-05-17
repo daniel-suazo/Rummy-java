@@ -9,3 +9,7 @@ At the start of your turn, you may draw the top of the deck or discard pile usin
 Once you have drawn a card, you can lay a set by selecting multiple cards (control click or shift click) and then hitting the Lay button.
 to end your turn, select a card and lay it on the discard pile using the LayOnStack button.
 Player 2 will take their turn almost instantly, and you can begin again on your next turn.
+
+# Collaborator
+
+Gabriel Santiago Plaza, Eduardo Santin Martinez

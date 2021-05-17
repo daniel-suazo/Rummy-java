@@ -1,13 +1,11 @@
-public class Set extends Stack {
+public class Set extends MyStack<Card> {
 
     static Stack set;
     private char rank;
-    private Card card;
 
     public Set(char r) {
-        super(52);
+        super();
         rank = r;
-
     }
 
     /*
@@ -16,7 +14,7 @@ public class Set extends Stack {
      */
     public void addCard(Card card) {
         if (this.rank == card.getRank()) {
-            Push(card);
+            push(card);
         } else {
             System.out.println("cards are not of the same rank");
         }
@@ -29,7 +27,7 @@ public class Set extends Stack {
      * @return int returns int corresponding to rank as defined in CardInterface
      */
     public int getRankIndex() {
-        return this.card.getRankIndex(getRank());
+        return Card.getRankIndex(getRank());
 
     }
 
@@ -39,7 +37,7 @@ public class Set extends Stack {
      * @return char returns char of rank as defined in CardInterface
      */
     public char getRank() {
-        return this.card.getRank();
+        return rank;
     }
 
     /**
@@ -48,7 +46,7 @@ public class Set extends Stack {
      * @return if true then no more Card may be added to the set
      */
     public boolean isFull() {
-        if (set.Size() == 3) {
+        if (this.size() == 3) {
             return true;
         } else {
             return false;
