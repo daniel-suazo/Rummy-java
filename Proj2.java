@@ -1,5 +1,12 @@
 import java.awt.*;
 import javax.swing.*;
+
+import proj2.Card;
+import proj2.Deck;
+import proj2.Hand;
+import proj2.Pile;
+import proj2.Set;
+
 import java.awt.event.*;
 
 /**
