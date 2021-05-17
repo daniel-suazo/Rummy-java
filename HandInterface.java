@@ -93,7 +93,7 @@ public interface HandInterface extends Comparable<Hand> {
    * @return < 0 if this hand is less than the other hand, 0 if the two hands are
    *         the same, or > 0 if this hand is greater then the other hand.
    */
-  public int compareTo(Object otherHandObject);
+  public int compareTo(Card otherHand);
 
   /**
    * Evaluates the hand. Must be defined in the subclass that implements the hand
