@@ -12,4 +12,4 @@ Player 2 will take their turn almost instantly, and you can begin again on your 
 
 # Collaborator
 
-Gabriel Santiago Plaza, Eduardo Santin Martinez
+Gabriel Santiago Plaza, Eduardo Santín Martínez
