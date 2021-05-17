@@ -1,3 +1,5 @@
+package proj2;
+
 public interface SetInterface extends HandInterface {
 	/*
 	 * Must override the behavior of the HandInterface so that a Set only accepts a

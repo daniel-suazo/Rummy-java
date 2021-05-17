@@ -1,3 +1,5 @@
+package proj2;
+
 import java.util.LinkedList;
 // MyStack.java - Daniel Suazo - 15 May 2021
 // last modified: Daniel Suazo - 15 May 2021

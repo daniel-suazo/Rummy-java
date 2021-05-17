@@ -1,3 +1,4 @@
+package proj2;
 
 /**
  * Represents the basic functionality of a hand of cards. Extensions of this

@@ -1,3 +1,5 @@
+package proj2;
+
 public class Set extends MyStack<Card> {
 
     static Stack set;

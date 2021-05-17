@@ -1,3 +1,5 @@
+package proj2;
+
 public class Stack {
     static Card stack[];
     static int top;

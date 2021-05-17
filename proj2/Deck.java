@@ -1,3 +1,5 @@
+package proj2;
+
 import java.util.*;
 
 // import package.Stack;

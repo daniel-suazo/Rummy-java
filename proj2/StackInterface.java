@@ -1,3 +1,4 @@
+package proj2;
 
 public interface StackInterface {
 

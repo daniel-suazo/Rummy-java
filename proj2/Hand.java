@@ -1,3 +1,5 @@
+package proj2;
+
 import javax.swing.*;
 // import java.util.Collections.
 

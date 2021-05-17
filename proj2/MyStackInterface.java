@@ -1,3 +1,5 @@
+package proj2;
+
 public interface MyStackInterface<T> {
 
     /**

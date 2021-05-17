@@ -1,4 +1,6 @@
+package proj2;
 // Card.java - John K. Estell - 8 May 2003
+
 // last modified: Daniel Suazo - 15 May 2021
 // Implementation of a playing card.  Uses classes Rank and Suit for
 // expressing the card value.
@@ -19,12 +21,12 @@ public class Card implements Comparable<Card> {
    // instance variables for the card
    private char suitValue;
    private char rankValue;
-   final static char[] suit = { 'c', 'd', 'h', 's' };
-   final static char[] rank = { 'a', '2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k' };
+   public final static char[] suit = { 'c', 'd', 'h', 's' };
+   public final static char[] rank = { 'a', '2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k' };
 
    private ImageIcon cardImage;
 
-   static String directory = "cards/";
+   public final static String directory = "cards/";
 
    /**
     * Creates a new playing card.
